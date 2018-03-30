@@ -1,0 +1,31 @@
+{
+  "collectCoverageFrom": [
+    "src/**/*.ts"
+  ],
+  "coveragePathIgnorePatterns": [
+    "./node_modules"
+  ],
+  "coverageReporters": [
+    "json",
+    "lcov",
+    "text"
+  ],
+  "coverageThreshold": {
+    "global": {
+      "branches": 100,
+      "functions": 100,
+      "lines": 100,
+      "statements": 100
+    }
+  },
+  "transform": {
+    ".ts": "./node_modules/ts-jest/preprocessor.js"
+  },
+  "testEnvironment": "node",
+  "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts)$",
+  "moduleFileExtensions": [
+    "ts",
+    "js",
+    "json"
+  ]
+}

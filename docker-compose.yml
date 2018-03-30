@@ -1,0 +1,18 @@
+version: "3"
+services:
+  local:
+    build: ./
+    image: compose-serverless-typescript
+    env_file:
+      - dev.env
+    environment:
+      - AWS_STAGE
+      - AWS_REGION
+    volumes:
+      - "./:/usr/src/app"
+    ports:
+      - 3000:3000
+    command: >
+              sh -c '
+              yarn run local
+              '

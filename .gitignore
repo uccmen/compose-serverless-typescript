@@ -1,0 +1,22 @@
+# package directories
+node_modules
+jspm_packages
+
+# Serverless directories
+.serverless
+
+# Webpack directories
+.webpack
+.build
+
+# OSX related files
+.DS_Store
+
+# Jest coverage
+coverage/
+
+# IDEA related files
+.idea/
+
+# Misc
+yarn-error.log

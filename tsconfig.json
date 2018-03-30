@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "es6",
+    "lib": [
+      "es2015"
+    ],
+    "baseUrl": "./src",
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
+    "noImplicitAny": false,
+    "noUnusedLocals": true,
+    "noImplicitThis": true,
+    "strictNullChecks": true,
+    "noImplicitReturns": true,
+    "preserveConstEnums": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "moduleResolution": "node",
+    "forceConsistentCasingInFileNames": true,
+    "paths": {
+      "*": ["./src/*", "*"]
+    }
+  },
+  "exclude": [
+    "./node_modules"
+  ]
+}
